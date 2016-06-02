@@ -14,6 +14,7 @@
 		1D402D971D002AA500ADFD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D402D951D002AA500ADFD60 /* LaunchScreen.storyboard */; };
 		1D402DA21D002AA500ADFD60 /* UnityShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D402DA11D002AA500ADFD60 /* UnityShareTests.swift */; };
 		1D402DAD1D002AA500ADFD60 /* UnityShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D402DAC1D002AA500ADFD60 /* UnityShareUITests.swift */; };
+		1DC7BD671D00334E00D4AE67 /* UnityShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7BD661D00334E00D4AE67 /* UnityShare.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1D402DA81D002AA500ADFD60 /* UnityShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnityShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D402DAC1D002AA500ADFD60 /* UnityShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityShareUITests.swift; sourceTree = "<group>"; };
 		1D402DAE1D002AA500ADFD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC7BD661D00334E00D4AE67 /* UnityShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnityShare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1D402D8C1D002AA500ADFD60 /* AppDelegate.swift */,
 				1D402D8E1D002AA500ADFD60 /* ViewController.swift */,
+				1DC7BD661D00334E00D4AE67 /* UnityShare.swift */,
 				1D402D901D002AA500ADFD60 /* Main.storyboard */,
 				1D402D931D002AA500ADFD60 /* Assets.xcassets */,
 				1D402D951D002AA500ADFD60 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC7BD671D00334E00D4AE67 /* UnityShare.swift in Sources */,
 				1D402D8F1D002AA500ADFD60 /* ViewController.swift in Sources */,
 				1D402D8D1D002AA500ADFD60 /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +486,7 @@
 				1D402DB31D002AA500ADFD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D402DB41D002AA500ADFD60 /* Build configuration list for PBXNativeTarget "UnityShareTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				1D402DB61D002AA500ADFD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D402DB71D002AA500ADFD60 /* Build configuration list for PBXNativeTarget "UnityShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				1D402DB91D002AA500ADFD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
