@@ -1,17 +1,33 @@
 import UIKit
 
-class UnityShare: NSObject
+public class UnityShare: UIViewController
 {
-    
-    func share(view:UIViewController , text: String , url:String="",imagename:String="")
+    public static func share(view:UIViewController , text: String , url:String="",imagename:String="")
     {
+        
         var items:[AnyObject] = [text,url]
-        if let image = UIImage(named: "imagename")
+        if let image = UIImage(contentsOfFile: imagename)
         {
             items.append(image)
         }
+        else
+        {
+            print("img no swift")
+        }
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        activityVC.completionWithItemsHandler = { (activity: String?, completed: Bool, items: [AnyObject]?, error: NSError?) -> Void in
+            if completed
+            {
+                print("---------activityVC_comp_close")
+            }
+            else
+            {
+                print("---------activityVC_cancel_close")
+            }
+        }
+        
         view.presentViewController(activityVC, animated: true, completion: nil)
     }
 }
