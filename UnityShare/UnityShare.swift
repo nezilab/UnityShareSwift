@@ -16,15 +16,17 @@ public class UnityShare: UIViewController
         }
         
         let activityVC = UIActivityViewController(activityItems: items, applicationActivities: nil)
-        
+        //let unitysc = UnityShareConnector()
         activityVC.completionWithItemsHandler = { (activity: String?, completed: Bool, items: [AnyObject]?, error: NSError?) -> Void in
             if completed
             {
                 print("---------activityVC_comp_close")
+                //unitysc.closeCallBack()
             }
             else
             {
                 print("---------activityVC_cancel_close")
+                //unitysc.closeCallBack()
             }
         }
         
